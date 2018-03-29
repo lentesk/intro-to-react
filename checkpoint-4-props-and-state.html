@@ -12,16 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
     <script type="text/babel">
-<<<<<<< HEAD:newComponent.html
-    class Newcomponent extends React.Component {
-      render() {
-        return (
-        <div>
-          <h1>Having fun learning</h1>
-        </div>
-      );
-    }
-=======
 
     class Newcomponent extends React.Component {
       constructor(props){
@@ -30,22 +20,16 @@
              number: 1
            }
          }
+        render() {
+          return (
+            <div>
+              <h1>Learning props and state at {this.props.label}</h1>
+              <h2>Day: {this.state.number} </h2>
+            </div>
+          );
+        }
+      }  
 
-  render() {
-    return (
-      <div>
-        <h1>Learning props and state at {this.props.label}</h1>
-        <h2>Day: {this.state.number} </h2>
-      </div>
-    );
->>>>>>> props-and-state:checkpoint-4-props-and-state.html
-  }
-
-<<<<<<< HEAD:newComponent.html
-  ReactDOM.render(
-    <Newcomponent />, document.getElementById('app2')
-  );
-=======
     Newcomponent.defaultProps = {
        label: "Bloc"
       }
@@ -53,7 +37,6 @@
 ReactDOM.render(
   <Newcomponent />, document.getElementById('app2')
 );
->>>>>>> props-and-state:checkpoint-4-props-and-state.html
     </script>
   </body>
 </html>
